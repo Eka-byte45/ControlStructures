@@ -1,4 +1,4 @@
-ï»¿
+
 //#include <iostream>
 //using namespace std;
 //
@@ -34,7 +34,7 @@
 //void printStudent(Student student)
 //{
 //	cout << student.name << endl;
-//	cout << "ÐžÑ†ÐµÐ½ÐºÐ¸: ";
+//	cout << "Îöåíêè: ";
 //	for (int i = 0; i < markCount; ++i)
 //	{
 //		cout<<student.marks[i]<<" ";
@@ -48,12 +48,12 @@
 //
 //	Student student;
 //
-//	const char* studentName{ "Ð“Ð¾Ð»Ð¸Ñ†Ñ‹Ð½ Ð›.ÐŸ" };
+//	const char* studentName{ "Ãîëèöûí Ë.Ï" };
 //	int studentMarks[]{ 5,3,3 };
 //
 //	initStudent(student, studentName, studentMarks);
 //	printStudent(student);
-//	cout << "Ð¡Ñ€ÐµÐ´Ð½ÑÑ Ð¾Ñ†ÐµÐ½ÐºÐ°: "<< averMark(student);
+//	cout << "Ñðåäíÿÿ îöåíêà: "<< averMark(student);
 //
 //	return 0;
 //}
@@ -93,7 +93,7 @@
 //	void print()
 //	{
 //		cout << name << endl;
-//		cout << "ÐžÑ†ÐµÐ½ÐºÐ¸: ";
+//		cout << "Îöåíêè: ";
 //		for (int i = 0; i < markCount; ++i)
 //		{
 //			cout << marks[i] << " ";
@@ -103,7 +103,7 @@
 //
 //	void printAver()
 //	{
-//		cout <<"Ð¡Ñ€ÐµÐ´Ð½ÑÑ Ð¾Ñ†ÐµÐ½ÐºÐ°: "<< getAver() << endl;
+//		cout <<"Ñðåäíÿÿ îöåíêà: "<< getAver() << endl;
 //	}
 //
 //
@@ -113,7 +113,7 @@
 //{
 //	system("chcp 1251 > NUL");
 //
-//	Student student{ "Ð¡Ð¸Ð´Ð¾Ñ€Ð¾Ð² Ð¡.Ð¡",new int[3] { 4,4,3 } };
+//	Student student{ "Ñèäîðîâ Ñ.Ñ",new int[3] { 4,4,3 } };
 //	student.print();
 //	student.printAver();
 //
@@ -147,10 +147,10 @@
 //{
 //	system("chcp 1251 > NUL");
 //
-//	cout << "Ð£ÑÐ¿ÐµÐ²Ð°ÐµÐ¼Ð¾ÑÑ‚ÑŒ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð°." << endl;
+//	cout << "Óñïåâàåìîñòü ñòóäåíòà." << endl;
 //
 //	Student student;
-//	strcpy_s(student.name, 20, "ÐŸÐµÑ‚Ñ€Ð¾Ð² Ð•.Ð•");
+//	strcpy_s(student.name, 20, "Ïåòðîâ Å.Å");
 //	
 //	student.marks[0] = 5;
 //	student.marks[1] = 3;
@@ -158,7 +158,7 @@
 //
 //	double aver = student.getAver();
 //
-//	cout << "Ð¤Ð˜Ðž: " << student.name << " ÑÑ€ÐµÐ´Ð½Ð¸Ð¹ Ð±Ð°Ð»Ð»: " << aver;
+//	cout << "ÔÈÎ: " << student.name << " ñðåäíèé áàëë: " << aver;
 //
 //	return 0;
 //}
@@ -177,7 +177,7 @@
 //public:
 //	/*Student()
 //	{
-//		cout << "ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Student" << endl;
+//		cout << "Êîíñòðóêòîð Student" << endl;
 //	}*/
 //	Student(const char* studentName)
 //	{
@@ -222,17 +222,17 @@
 //{
 //	system("chcp 1251 > NUL");
 //
-//	cout << "Ð£ÑÐ¿ÐµÐ²Ð°ÐµÐ¼Ð¾ÑÑ‚ÑŒ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð°." << endl;
+//	cout << "Óñïåâàåìîñòü ñòóäåíòà." << endl;
 //
-//	Student student("Ð˜Ð²Ð°Ð½Ð¾Ð² Ð˜.Ð˜");
+//	Student student("Èâàíîâ È.È");
 //	
-//	//student.setName("Ð˜Ð²Ð°Ð½Ð¾Ð² Ð˜.Ð˜");
+//	//student.setName("Èâàíîâ È.È");
 //	student.setMark(10, 0);
 //	student.setMark(11, 1);
 //	student.setMark(12, 2);
 //
-//	cout <<"Ð˜Ð¼Ñ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð°:"<<student.getName() << endl;
-//	cout << "Ð¡Ñ€ÐµÐ´Ð½Ð¸Ð¹ Ð±Ð°Ð»Ð»: " << student.getAver() << endl;
+//	cout <<"Èìÿ ñòóäåíòà:"<<student.getName() << endl;
+//	cout << "Ñðåäíèé áàëë: " << student.getAver() << endl;
 //	return 0;
 //}
 
@@ -298,7 +298,7 @@
 //	return 0;
 //}
 
-//Ð”Ð¾Ð¼Ð°ÑˆÐºÐ° ÐºÐ»Ð°ÑÑ ÐšÐ¸Ñ€Ð¿Ð¸Ñ‡
+//Äîìàøêà êëàññ Êèðïè÷
 
 //#include <iostream>
 //
@@ -368,12 +368,12 @@
 //
 //	void ShowBreak()
 //	{
-//		std::cout<<"Ð”Ð»Ð¸Ð½Ð°: " << length<<" Ð¨Ð¸Ñ€Ð¸Ð½Ð°: " << width<<" Ð’Ñ‹ÑÐ¾Ñ‚Ð°: " << heigth <<" ÐœÐ°Ñ€ÐºÐ° ÐºÐ¸Ñ€Ð¿Ð¸Ñ‡Ð°: "  << brand<<std::endl;
+//		std::cout<<"Äëèíà: " << length<<" Øèðèíà: " << width<<" Âûñîòà: " << heigth <<" Ìàðêà êèðïè÷à: "  << brand<<std::endl;
 //	}
 //
 //	void ShowBrand()
 //	{
-//		std::cout<<"ÐœÐ°Ñ€ÐºÐ° ÐºÐ¸Ñ€Ð¿Ð¸Ñ‡Ð°: " << brand << std::endl;
+//		std::cout<<"Ìàðêà êèðïè÷à: " << brand << std::endl;
 //	}
 //
 //
@@ -390,13 +390,13 @@
 //
 //	std::cout << std::endl;
 //
-//	Break break2(5,4,3,"ÐºÑ€Ð°ÑÐ½Ñ‹Ð¹");
+//	Break break2(5,4,3,"êðàñíûé");
 //	break2.ShowBrand();
 //	break2.ShowBreak();
 //
 //	std::cout << std::endl;
 //
-//	Break break3{ 5, 5, 5, "Ð±ÐµÐ»Ñ‹Ð¹" };
+//	Break break3{ 5, 5, 5, "áåëûé" };
 //	break3.ShowBrand();
 //	break3.ShowBreak();
 //
@@ -418,7 +418,7 @@
 //	//Point():X{0},Y{0},Z{0}
 //	Point() :X{}, Y{}, Z{}
 //	{
-//		std::cout << "ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ!!!" << std::endl;
+//		std::cout << "Êîíñòðóêòîð ïî óìîë÷àíèþ!!!" << std::endl;
 //	}
 //
 //	/*Point(int x, int y, int z)
@@ -426,33 +426,33 @@
 //		X = x;
 //		Y = y;
 //		Z = z;
-//		std::cout << "ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ñ Ñ‚ÐµÑ€Ð¼Ñ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð°Ð¼Ð¸!!!"<<std::endl;
+//		std::cout << "Êîíñòðóêòîð ñ òåðìÿ ïàðàìåòðàìè!!!"<<std::endl;
 //
 //	}*/
 //
 //	Point(int x,int y,int z) : X{x}, Y{y},Z{z}
 //	{
-//		std::cout << "ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ñ Ñ‚ÐµÑ€Ð¼Ñ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð°Ð¼Ð¸!!!" << std::endl;
+//		std::cout << "Êîíñòðóêòîð ñ òåðìÿ ïàðàìåòðàìè!!!" << std::endl;
 //	}
 //
 //	/*Point(int x, int y, int z=0) : X{ x }, Y{ y }, Z{ z }
 //	{
-//		std::cout << "ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ñ Ñ‚ÐµÑ€Ð¼Ñ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð°Ð¼Ð¸!!!" << std::endl;
+//		std::cout << "Êîíñòðóêòîð ñ òåðìÿ ïàðàìåòðàìè!!!" << std::endl;
 //	}*/
 //
 //	/*Point(int x=0, int y=0, int z = 0) : X{ x }, Y{ y }, Z{ z }
 //	{
-//		std::cout << "ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ñ Ñ‚ÐµÑ€Ð¼Ñ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð°Ð¼Ð¸!!!" << std::endl;
+//		std::cout << "Êîíñòðóêòîð ñ òåðìÿ ïàðàìåòðàìè!!!" << std::endl;
 //	}*/
 //
 //	Point(int x, int z) :Point{ x,0,z }
 //	{
-//		std::cout << "ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ñ Ð´Ð²ÑƒÐ¼Ñ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð°Ð¼Ð¸ Ð¸ Ð´ÐµÐ»ÐµÐ³Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸ÐµÐ¼!!!" << std::endl;
+//		std::cout << "Êîíñòðóêòîð ñ äâóìÿ ïàðàìåòðàìè è äåëåãèðîâàíèåì!!!" << std::endl;
 //	}
 //	 
 //	Point(): Point{0,0,0}
 //	{
-//		std::cout << "ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ Ñ Ð´ÐµÐ»ÐµÐ³Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸ÐµÐ¼!!!" << std::endl;
+//		std::cout << "Êîíñòðóêòîð ïî óìîë÷àíèþ ñ äåëåãèðîâàíèåì!!!" << std::endl;
 //	}
 //};
 //
@@ -479,7 +479,7 @@
 //	int b = 0;
 //	int c = 0;
 //	
-//	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð²Ð° Ñ‡Ð¸ÑÐ»Ð°: "<<std::endl;
+//	std::cout << "Ââåäèòå äâà ÷èñëà: "<<std::endl;
 //	std::cin >> a >> b;
 //	do
 //	{
@@ -489,7 +489,7 @@
 //	
 //	} while (b!= 0);
 //	
-//	std::cout << "ÐÐžÐ” = " << a << std::endl;
+//	std::cout << "ÍÎÄ = " << a << std::endl;
 //
 //	return 0;
 //}
@@ -505,7 +505,7 @@ public:
 
 	void Show()
 	{
-		std::cout << "Ð”Ñ€Ð¾Ð±ÑŒ: " << Numerator << "/" << Denominator << std::endl;
+		std::cout << "Äðîáü: " << Numerator << "/" << Denominator << std::endl;
 	}
 
 	int NOD(int numerator, int denominator)
